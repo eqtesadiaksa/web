@@ -51643,7 +51643,7 @@ r.n(s,"active",!r.h(s,"active"))},
 $S:0}
 A.b1q.prototype={
 $1(a){var s=null,r=t.ix
-return A.b8x(s,A.kl(s,s,A.bs(A.T(new A.a1(B.a0q,new A.b1p(this.a,this.b,a),r),!0,r.i("aq.E")),B.o,B.q,B.bR),B.n,s,s,0,5,5),s,B.al7)},
+return A.b8x(s,A.kl(s,s,A.bs(A.T(new A.a1(B.a0q,new A.b1p(this.a,this.b,a),r),!0,r.i("aq.E")),B.o,B.q,B.bR),B.n,s,100,0,2,5),s,B.al7)},
 $S:127}
 A.b1p.prototype={
 $1(a){var s=null,r=this.b.at==="en"?a.d:a.e
@@ -52079,77 +52079,81 @@ J(){return"APIKeysEnum."+this.b}}
 A.a_j.prototype={
 kJ(a,b){var s=null
 return A.eO(s,this.aId(this.e,a,this.r,b),B.Z,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,new A.azE(b),s,s,s,s,s,s)},
-aId(a1,a2,a3,a4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=t.J,a0=A.L(a2,B.e,a)
-a0=a0==null?b:a0.gyD()
-a0=c.GX(!0,a0==null?"Classification":a0)
-s=A.L(a2,B.e,a)
-s=s==null?b:s.gEX()
-if(s==null)s="Class"
-s=c.it(new A.azG(a4,a2),s)
-r=A.L(a2,B.e,a)
-r=r==null?b:r.gf7(r)
-if(r==null)r="Type"
-r=c.it(new A.azH(a4,a2),r)
-q=A.L(a2,B.e,a)
-q=q==null?b:q.gQu(q)
-q=c.GX(!0,q==null?"items":q)
-p=A.L(a2,B.e,a)
-p=p==null?b:p.gAD(p)
-if(p==null)p="product"
-p=c.it(new A.azI(a4,a2),p)
-o=A.L(a2,B.e,a)
-o=o==null?b:o.gRF()
-if(o==null)o="Product List"
-o=c.it(new A.azN(a4,a2),o)
-n=A.L(a2,B.e,a)
-n=n==null?b:n.gQC()
-if(n==null)n="load data from CSV"
-n=c.it(new A.azO(a4,a2),n)
-m=A.L(a2,B.e,a)
-m=m==null?b:m.gS5()
-m=c.GX(!0,m==null?"Reports":m)
-l=A.L(a2,B.e,a)
-l=l==null?b:l.gIE()
-if(l==null)l="Sales"
-l=c.it(new A.azP(c),l)
-k=A.L(a2,B.e,a)
-k=k==null?b:k.gzT()
-if(k==null)k="Inventory"
-k=c.it(new A.azQ(c),k)
-j=A.L(a2,B.e,a)
-j=j==null?b:j.gOG()
-if(j==null)j="Customer"
-j=c.it(new A.azR(c),j)
-i=A.L(a2,B.e,a)
-i=i==null?b:i.gSv()
-if(i==null)i="Traffic and Conversion"
-i=c.it(new A.azS(c),i)
-h=A.L(a2,B.e,a)
-h=h==null?b:h.gNo()
-if(h==null)h="Abandoned Cart"
-h=c.it(new A.azT(c),h)
-g=A.L(a2,B.e,a)
-g=g==null?b:g.gRY()
-if(g==null)g="Referral"
-g=c.it(new A.azU(c),g)
-f=A.L(a2,B.e,a)
-f=f==null?b:f.gRJ()
-if(f==null)f="Profit and Loss"
-f=c.it(new A.azJ(c),f)
-e=A.L(a2,B.e,a)
-e=e==null?b:e.gJ1()
-if(e==null)e="Shipping and Fulfillment"
-e=c.it(new A.azK(c),e)
-d=A.L(a2,B.e,a)
-d=d==null?b:d.gRH()
-if(d==null)d="Product Performance"
-d=c.it(new A.azL(c),d)
-a=A.L(a2,B.e,a)
-a=a==null?b:a.gS9()
-if(a==null)a="Return and Refund"
-a=A.a([a0,s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c.it(new A.azM(c),a)],t.p)
-if(J.X($.eZ,"role")!=null)if(J.d(J.brr(J.X($.eZ,"role")),"OWNER".toLowerCase()))B.b.G(a,c.ahd(a2,a4))
-return new A.bp(B.rB,new A.aJ(200,a1,new A.VS(A.lS(a,B.bC,B.u,!1),b),b),b)},
+aId(a3,a4,a5,a6){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1=this,a2=null
+if(J.X($.eZ,"role")!=null){s=J.brr(J.X($.eZ,"role"))
+r=s==="OWNER".toLowerCase()||s==="ADMIN".toLowerCase()}else r=!1
+q=t.J
+p=A.L(a4,B.e,q)
+p=p==null?a2:p.gyD()
+p=a1.GX(!0,p==null?"Classification":p)
+o=A.L(a4,B.e,q)
+o=o==null?a2:o.gEX()
+if(o==null)o="Class"
+o=a1.it(new A.azG(a6,a4),o)
+n=A.L(a4,B.e,q)
+n=n==null?a2:n.gf7(n)
+if(n==null)n="Type"
+n=a1.it(new A.azH(a6,a4),n)
+m=A.L(a4,B.e,q)
+m=m==null?a2:m.gQu(m)
+m=a1.GX(!0,m==null?"items":m)
+l=A.L(a4,B.e,q)
+l=l==null?a2:l.gAD(l)
+if(l==null)l="product"
+l=a1.it(new A.azI(a6,a4),l)
+k=A.L(a4,B.e,q)
+k=k==null?a2:k.gRF()
+if(k==null)k="Product List"
+k=a1.it(new A.azN(a6,a4),k)
+j=A.L(a4,B.e,q)
+j=j==null?a2:j.gQC()
+if(j==null)j="load data from CSV"
+j=a1.it(new A.azO(a6,a4),j)
+i=A.L(a4,B.e,q)
+i=i==null?a2:i.gS5()
+i=a1.GX(!0,i==null?"Reports":i)
+h=A.L(a4,B.e,q)
+h=h==null?a2:h.gIE()
+if(h==null)h="Sales"
+h=a1.it(new A.azP(a1),h)
+g=A.L(a4,B.e,q)
+g=g==null?a2:g.gzT()
+if(g==null)g="Inventory"
+g=a1.it(new A.azQ(a1),g)
+f=A.L(a4,B.e,q)
+f=f==null?a2:f.gOG()
+if(f==null)f="Customer"
+f=a1.it(new A.azR(a1),f)
+e=A.L(a4,B.e,q)
+e=e==null?a2:e.gSv()
+if(e==null)e="Traffic and Conversion"
+e=a1.it(new A.azS(a1),e)
+d=A.L(a4,B.e,q)
+d=d==null?a2:d.gNo()
+if(d==null)d="Abandoned Cart"
+d=a1.it(new A.azT(a1),d)
+c=A.L(a4,B.e,q)
+c=c==null?a2:c.gRY()
+if(c==null)c="Referral"
+c=a1.it(new A.azU(a1),c)
+b=A.L(a4,B.e,q)
+b=b==null?a2:b.gRJ()
+if(b==null)b="Profit and Loss"
+b=a1.it(new A.azJ(a1),b)
+a=A.L(a4,B.e,q)
+a=a==null?a2:a.gJ1()
+if(a==null)a="Shipping and Fulfillment"
+a=a1.it(new A.azK(a1),a)
+a0=A.L(a4,B.e,q)
+a0=a0==null?a2:a0.gRH()
+if(a0==null)a0="Product Performance"
+a0=a1.it(new A.azL(a1),a0)
+q=A.L(a4,B.e,q)
+q=q==null?a2:q.gS9()
+if(q==null)q="Return and Refund"
+q=A.a([p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1.it(new A.azM(a1),q)],t.p)
+if(r)B.b.G(q,a1.ahd(a4,a6))
+return new A.bp(B.rB,new A.aJ(200,a3,new A.VS(A.lS(q,B.bC,B.u,!1),a2),a2),a2)},
 ahd(a,b){var s=t.J,r=A.L(a,B.e,s)
 r=r==null?null:r.gGR()
 r=this.GX(!0,r==null?"Management":r)
